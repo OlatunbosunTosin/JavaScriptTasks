@@ -1,3 +1,4 @@
-let isLoggedIn = true;
-
-(isLoggedIn == true)?console.log("Welcome back!"):console.log("Please log in.")
+let isLoggedIn = false;
+let message;
+message = isLoggedIn ? "Welcome back!" : "Please log in." 
+console.log(message)
