@@ -1,11 +1,11 @@
-function usernameDeletion(){
+function usernameDeletion(user){
 
-const user = {username: "admin",password: "12345"}; 
-
-return delete user.username;
+    delete user.username;
+    return user;
 
 }
 
-console.log(usernameDeletion());
+const user = {username: "admin",password: "12345"}; 
+console.log(usernameDeletion(user));
 
 

@@ -1,10 +1,10 @@
-function Destructuring(){
+function Destructuring(user){
 
-const user = {name: "Amaka",age: 25,country: "Nigeria"}; 
+    let{name, age} = user;
 
-let{name, age} = user;
-
-return {name, age};
+    return {name, age};
 
 }
-console.log(Destructuring());
+
+const user = {name: "Amaka",age: 25,country: "Nigeria"}; 
+console.log(Destructuring(user));

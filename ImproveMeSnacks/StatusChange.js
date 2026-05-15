@@ -1,13 +1,12 @@
-function statusChange(){
+function statusChange(order){
 
-const order = {id: 1,status: "pending"}; 
+    order.status = "delivered";
 
-order.status = "delivered";
-
-return order;
+    return order;
 
 }
 
-console.log(statusChange());
+const order = {id: 1,status: "pending"}; 
+console.log(statusChange(order));
 
 

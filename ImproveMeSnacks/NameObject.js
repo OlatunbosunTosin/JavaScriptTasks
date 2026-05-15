@@ -1,7 +1,8 @@
-function StudentName(){
+function StudentName(student){
 
-    const student = { name: "Chinedu", age: 22, course: "Computer Science"}; 
     return student.name;
 
 }
-console.log(StudentName());
+
+const student = { name: "Chinedu", age: 22, course: "Computer Science"}; 
+console.log(StudentName(student));

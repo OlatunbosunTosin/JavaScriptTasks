@@ -1,10 +1,11 @@
-function mergeObjects(){
+function mergeObjects(personal, professional){
+
+    return  {...personal, ...professional};
+
+}
 
 const personal = { name: 'Kemi', age: 27};          
                                                       
-const professional = {... personal, role: 'Designer', company: 'TechCorp' };
+const professional = {role: 'Designer', company: 'TechCorp' };
 
-return professional;
-
-}
-console.log(mergeObjects());
+console.log(mergeObjects(personal, professional));

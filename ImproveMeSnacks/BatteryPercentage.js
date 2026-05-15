@@ -1,11 +1,11 @@
-function batteryPercentage(){
+function batteryPercentage(phone){
 
-const phone = {brand: "Samsung",battery: 75};
-
-return phone.battery;
+    return phone.battery;
 
 }
 
-console.log(batteryPercentage());
+const phone = {brand: "Samsung",battery: 75};
+
+console.log(batteryPercentage(phone));
 
 
